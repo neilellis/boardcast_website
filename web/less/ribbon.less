@@ -1,0 +1,131 @@
+@import "bootstrap/bootstrap.less";
+
+.transform(@transform) {
+	-webkit-transform: @transform;
+	   -moz-transform: @transform;
+ 	    -ms-transform: @transform;
+	     -o-transform: @transform;
+	        transform: @transform;
+}
+
+
+.rib-holder {
+  position: absolute;
+  top: 0;
+  right:0;
+  overflow: hidden;
+  height: 15em;
+}
+
+.right.rib-holder {
+  right: 0;
+}
+
+.left.rib-holder {
+  left: 0;
+}
+
+.rib,
+.rib:hover {
+  text-decoration: none;
+}
+
+.rib {
+  letter-spacing: -.1px;
+  opacity: 0.95;
+
+  padding: 0.25em 0;
+  position: relative;
+  top: 2.5em;
+
+  /* Defaults friendly for white pages. */
+  .box-shadow(0 0 8px #888);
+  color: #FFF;
+  display: block;
+  line-height: 1.35em;
+  font-size:22px;
+  width:145px;
+  height:28px;
+  text-align:center;
+
+  a {
+      color:white;
+      &:hover {
+          font-weight:bolder;
+          text-decoration:none;
+      }
+  }
+}
+
+
+.rib .text {
+  padding: 0.1em 3em;
+}
+
+.right .rib {
+  .transform(rotate(45deg));
+  right: -1.6em;
+}
+
+.left .rib {
+  .transform(rotate(-45deg));
+  left: 2.6em;
+}
+
+.white.rib {
+  color: #111;
+  background-color: #F5F5F5;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f3f3f3), to(#fff));
+  -moz-box-shadow: 0 0 13px #999;
+  -webkit-box-shadow: 0 0 13px #999;
+  text-shadow: 0 0 .05em;
+}
+
+.white.rib .text {
+  border: 1px solid #cecece;
+}
+
+.red.rib {
+  background-color: #9a0000;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9a0000), to(#a90000));
+}
+
+.red.rib .text {
+  border: 1px solid #bf6060;
+}
+
+.green.rib {
+  background-color: #006e00;
+  background: -webkit-gradient(linear, left bottom, left top, from(#006e00), to(#007200));
+}
+
+.green.rib .text {
+  border: 1px solid #6bac6b;
+}
+
+.darkblue.rib {
+  background-color: #121621;
+  color: #ecedee;
+}
+
+.darkblue.rib .text {
+  border: 1px solid #53565e;
+}
+
+.orange.rib {
+  background-color: #E57504;
+  background: -webkit-gradient(linear, left bottom, left top, from(#dc7202), to(#ee7906));
+}
+
+.orange.rib .text {
+  border: 1px solid #ebaa65;
+}
+
+.gray.rib {
+  background-color: #6d6d6d;
+  background: -webkit-gradient(linear, left bottom, left top, from(#6a6a6a) to(#6d6d6d));
+}
+
+.gray.rib .text {
+  border: 1px solid #a4a4a4;
+}

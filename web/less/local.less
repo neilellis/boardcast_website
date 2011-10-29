@@ -1,0 +1,163 @@
+@import "ribbon.less";
+@import "nivo/themes/default/default.css";
+@import "nivo/nivo-slider.css";
+
+.topbar {
+    font-size:14px;
+}
+
+.brand {
+    font-family: Pacifico, Helvetica, Arial, sans-serif;
+    font-size:1.4em;
+    padding-top:0.3em;
+    font-weight:bolder;
+}
+
+
+.tagline {
+    font-family: Pacifico, Helvetica, Arial, sans-serif;
+    font-size:80px;
+    padding-top:40px;
+    padding-bottom:70px;
+    font-weight:bold;
+
+}
+
+
+.slider-wrapper {
+  background: none;
+  margin-bottom: 30px;
+  padding:20px;
+  .border-radius(6px);
+  h1 {
+    margin-bottom: 0;
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: @baseline * 1.5;
+  }
+
+}
+
+
+.theme-default .nivoSlider {
+    margin:0 auto;
+    /*width:849px; *//* Change this to your images width */
+    /*height:535px; *//* Change this to your images height */
+    width:849px; /* Change this to your images width */
+    height:440px; /* Change this to your images height */
+    background-image:url('../images/woman1-full-logo-load.jpg');
+}
+
+.nivoSlider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+}
+.nivoSlider a {
+    border:0;
+    display:block;
+}
+
+.theme-default .nivo-caption {
+    bottom:40%;
+    left:auto;
+    right:0px;
+    bottom:0px;
+    width:auto;
+    max-width:550px;
+    overflow:hidden;
+    background:#fff;
+    text-shadow:none;
+    font-family: arial, serif;
+    color:#4c4b4b;
+    font-size:18px;
+}
+.theme-default .nivo-caption p {
+    padding:5px 15px;
+    color:#333;
+    font-weight:bold;
+    font-size:20px;
+    text-transform:uppercase;
+}
+.theme-default .nivo-caption a {
+    color:#333;
+    font-weight:bold;
+    font-size:27px;
+    text-transform:uppercase;
+}
+
+.micro-screenshot {
+    img {
+        .border-radius(3px);
+        border: 1px solid #aaa;
+        display:block;
+    }
+    .border-radius(6px);
+    margin:20px;
+    margin-bottom:20px;
+    margin-top:20px;
+    max-width:202px;
+    width:202px;
+    /*padding:20px;*/
+    border: 1px solid #e0e0e0;
+    /*background-color: #f0f0f0;*/
+}
+
+.showme {
+    float:right;
+    margin-right:15px;
+    margin-top:10px;
+    /*position:absolute;*/
+}
+
+footer {
+    width:100%;
+}
+
+.copyright {
+    float:right;
+}
+
+
+.second-column {
+    border-left:solid 1px #f8f8f8;
+    border-right:solid 1px #f8f8f8;
+    margin-left:9px;
+    padding-left:10px;
+    background-color:#fdfdfd;
+    padding-right:10px;
+    padding-bottom:20px;
+}
+
+.first-column {
+    background-color:none;
+}
+
+.third-column {
+    margin-left:9px;
+    background-color:none;
+}
+
+
+@highlightColor:#4b8d2d;
+
+p.handwriting {
+            font-family: Pacifico, sans-serif;
+            font-weight:100;
+            float:right;
+            text-align:right;
+            font-size: 22px;
+            color: #555;
+            line-height: 28px;
+            padding-top:16px;
+//            color: darken(@highlightColor,20%);
+            opacity:0.5;
+}
+
+
