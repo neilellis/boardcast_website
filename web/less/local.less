@@ -2,15 +2,22 @@
 @import "nivo/themes/default/default.css";
 @import "nivo/nivo-slider.css";
 
-.topbar {
+@highlightColor: #4b8d2d;
+
+.topbar * {
     font-size:14px;
 }
 
-.brand {
+.topbar a.brand {
     font-family: Pacifico, Helvetica, Arial, sans-serif;
-    font-size:1.4em;
-    padding-top:0.3em;
     font-weight:bolder;
+    background-image:url('../images/boardcast-logo-small.png');
+    width:158px;
+    height:30px;
+    display:block;
+    margin:0;
+    padding:0;
+    margin-top:4px;
 }
 
 
@@ -20,6 +27,7 @@
     padding-top:40px;
     padding-bottom:70px;
     font-weight:bold;
+    margin-left:-30px;
 
 }
 
@@ -45,12 +53,13 @@
 
 
 .theme-default .nivoSlider {
-    margin:0 auto;
+    margin:0;
+    margin-left:-12px;
     /*width:849px; *//* Change this to your images width */
     /*height:535px; *//* Change this to your images height */
-    width:849px; /* Change this to your images width */
+    width:900px; /* Change this to your images width */
     height:440px; /* Change this to your images height */
-    background-image:url('../images/woman1-full-logo-load.jpg');
+    /*background-image:url('../images/woman1-full-logo-load.jpg');*/
 }
 
 .nivoSlider img {
@@ -152,12 +161,123 @@ p.handwriting {
             font-weight:100;
             float:right;
             text-align:right;
-            font-size: 22px;
+            font-size: 28px;
             color: #555;
             line-height: 28px;
             padding-top:16px;
 //            color: darken(@highlightColor,20%);
             opacity:0.5;
+}
+
+
+.call-to-action {
+    #gradient > .vertical(lighten(@highlightColor, 20%), @highlightColor);
+         text-shadow:-1px -1px 1px darken(@highlightColor, 10%);
+    float:right;
+    text-align:center;
+    &.primary {
+         line-height:26px;
+        padding:20px;
+        width:160px;
+        height:50px;
+         font-size:24px;
+         .border-radius(8px);
+         font-weight:bolder;
+         color:white;
+         margin-right:18px;
+         margin-top:20px;
+         border:2px solid @highlightColor;
+
+    }
+    small {
+         line-height:20px;
+         font-size:18px;
+         font-weight:normal;
+    }
+
+    &:hover{
+    #gradient > .vertical(lighten(@highlightColor, 10%), darken(@highlightColor, 10%));
+         text-shadow:-1px -1px 1px darken(@highlightColor, 20%);
+         cursor:pointer;
+         text-decoration:none;
+    }
+    display:block;
+}
+
+footer {
+    .box-shadow(0 -1px 3px rgba(0,0,0,0.2));
+    pading-top:10px;
+    background-color: #555;
+    background: url('../images/noise-grey.jpg');
+    width:100%;
+    height: 100%;
+    color:#fbfbfb;
+    div,p,span,h1,h2,h3,h4,h5,h6 {
+        color:#fbfbfb;
+    }
+}
+
+
+
+
+@stickyColor: #FCF0AD;
+
+.sticky-outer {
+    position:absolute;
+    height:250px;
+    width:270px;
+    margin-left:80px;
+
+}
+
+.sticky {
+    font-family:"Reenie Beanie", Arial, sans-sarif;
+    font-size:32px;
+    float:right;
+    padding:20px;
+    line-height:30px;
+    padding-top:24px;
+    left: 8px;
+    top:8px;
+    margin:12px;
+    margin-bottom:16px;
+    margin-left:80px;
+    width: 200px;
+    height: 180px;
+    color: #333;
+    background-color: #FCF0AD;
+//    background-image: -webkit-gradient(radial, 140 0, 140, 170 80, 230, from(lighten(@stickyColor, 20%)), to(@stickyColor));
+//    .shadow-border(@stickyColor);
+    .border-radius(4px);
+    overflow: visible;
+    position: relative;
+    float: left;
+    z-index:auto;
+
+    /* Lifted corners */
+     .box-shadow(0 1px 4px rgba(0, 0, 0, 0.2), 0 0 40px rgba(0, 0, 0, 0.05) inset) ;
+
+    &:before,
+    &:after {
+        content: "";
+        display:block;
+        position: absolute;
+        z-index:-1;
+        bottom: 10px;
+        left: 10px;
+        width: 50%;
+        height: 20%;
+        max-width: 300px;
+        .box-shadow(0 15px 10px rgba(0, 0, 0, 0.7));
+        .transform(rotate(-3deg));
+    }
+
+    &:after {
+        right: 10px;
+        left: auto;
+        .transform(rotate(3deg));
+    }
+
 }
 
 

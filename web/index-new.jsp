@@ -16,7 +16,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Boardcast - Show Me</title>
+    <title>Boardcast- Create and Publish Instantly</title>
     <meta name="description" content="">
     <meta name="author" content="Neil Ellis">
     <script type="text/javascript">
@@ -37,6 +37,7 @@
     <tags:less/>
     <tags:favicons/>
     <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
 
 </head>
 
@@ -48,85 +49,92 @@
 <div class="container">
 
 
-    <div class="tagline">Let me show you ...</div>
+    <div class="tagline">Create and publish instantly</div>
 
     <!-- Main hero unit for a primary marketing message or call to action -->
     <%--<div class="hero-unit">--%>
 
-    <div class="slider-wrapper theme-default">
-        <div class="ribbon"></div>
-        <div id="slider" class="nivoSlider">
-            <a href="http://beta.hashbo.com">
-                <img src="images/screenshot-1.png" alt=""
-                     title="#first-caption"/>
-            </a>
-            <a href="http://beta.hashbo.com">
-                <img src="images/screenshot-2.png" alt=""
-                     title="#second-caption"/>
-            </a>
-            <a href="http://beta.hashbo.com">
-                <img src="images/screenshot-3.png" alt=""
-                     title="#third-caption "/>
-            </a>
-            <a href="http://beta.hashbo.com">
-                <img src="images/screenshot-4.png" alt=""
-                     title="#fourth-caption "/>
-            </a>
-            <a href="http://beta.hashbo.com">
-                <img src="images/screenshot-5.png" alt=""
-                     title="#fith-caption "/>
-            </a>
-            <a href="http://beta.hashbo.com">
-                <img src="images/screenshot-6.png" alt=""
-                     title="#sixth-caption "/>
-            </a>
-        </div>
 
-        <div id="first-caption" class="nivo-html-caption">
-            An urban fox.
-        </div>
-        <div id="second-caption" class="nivo-html-caption">
-            My friends wedding wedding.
-        </div>
-        <div id="third-caption" class="nivo-html-caption">
-            Our new noticeboard.
-        </div>
-        <div id="fourth-caption" class="nivo-html-caption">
-            A poem.
-        </div>
-        <div id="fith-caption" class="nivo-html-caption">
-            Simply pick a background and add some content.
-        </div>
-        <div id="sixth-caption" class="nivo-html-caption">
-            Whatever you have to show us, show us with Boardcast.
-        </div>
-
-    </div>
     <!-- Example row of columns -->
     <div class="row">
         <div class="span11 first-column">
-            <h2>Create and publish instantly</h2>
+            <%--<h2>Create and publish instantly</h2>--%>
 
             <p>
                 Have you ever wanted to just put something on the Internet, without all the fuss and bother of creating
                 a website or a blog? Just a simple means to stick something up and send it to someone. Whether it be
                 a creative act like a poem or something more functional like a noticeboard.</p>
 
-            <p class="handwriting">Spend minutes or seconds creating a
-                board, not hours creating a blog.
+            <p class="handwriting">Spend minutes creating a
+                board not hours on a blog.
 
             <p/>
 
-            <%--<p><a class="btn" href="http://beta.hashbo.com">Show me &raquo;</a></p>--%>
+            <%--<p><a class="btn" href="http://boardcast.it">Show me &raquo;</a></p>--%>
         </div>
-        <div class="span4">
-            <div class=" micro-screenshot"><img class="thumbnail" src="images/small-snapshot-1.jpg"/></div>
+        <div class="span5">
+            <a class="call-to-action primary" href="/_login-register">
+                Sign Up Now
+                <small>And start creating!</small>
+            </a>
         </div>
+
+        <%--<div class="span4">--%>
+            <%--<div class=" micro-screenshot"><img class="thumbnail" src="images/small-snapshot-1.jpg"/></div>--%>
+        <%--</div>--%>
     </div>
-    <hr/>
+    <div class="slider-wrapper theme-default">
+        <div class="ribbon"></div>
+        <div id="slider" class="nivoSlider">
+            <a href="http://boardcast.it">
+                <img src="images/slider-1.jpg" alt=""
+                     title="#first-caption"/>
+            </a>
+            <a href="http://boardcast.it">
+                <img src="images/slider-2.png" alt=""
+                     title="#second-caption"/>
+            </a>
+            <a href="http://boardcast.it">
+                <img src="images/slider-3.png" alt=""
+                     title="#third-caption "/>
+            </a>
+            <a href="http://boardcast.it">
+                <img src="images/slider-4.png" alt=""
+                     title="#fourth-caption "/>
+            </a>
+            <a href="http://boardcast.it">
+                <img src="images/slider-5.jpg" alt=""
+                     title="#fith-caption "/>
+            </a>
+            <a href="http://boardcast.it">
+                <img src="images/slider-6.jpg" alt=""
+                     title="#sixth-caption "/>
+            </a>
+        </div>
+
+        <div id="first-caption" class="nivo-html-caption">
+            Simply choose a background
+        </div>
+        <div id="second-caption" class="nivo-html-caption">
+           Add some content, like photos, videos, text or more.
+        </div>
+        <div id="third-caption" class="nivo-html-caption">
+           Then share it with your friends.
+        </div>
+        <div id="fourth-caption" class="nivo-html-caption">
+            All the changes you make happen instantly.
+        </div>
+        <div id="fith-caption" class="nivo-html-caption">
+            You can even make changes together.
+        </div>
+        <div id="sixth-caption" class="nivo-html-caption">
+            Whatever you have to show people, Boardcast it.
+        </div>
+
+    </div>
     <div class="row">
 
-        <div class="span15">
+        <div class="span10">
             <h2>See changes in realtime</h2>
 
             <p>At Boardcast we <strong>love</strong> Twitter and we <strong>love</strong> the realtime web, that's why
@@ -136,9 +144,12 @@
                 you make is live instantly, so no problem keeping people informed with up to the minute changes.
             </p>
 
-            <p class="handwriting">Show updates in realtime, let your content join the conversation.</p>
+            <p class="handwriting">Let your content join the conversation.</p>
 
-            <%--<a class="btn large primary showme" href="http://beta.hashbo.com">Show me &raquo;</a>--%>
+            <%--<a class="btn large primary showme" href="http://boardcast.it">Show me &raquo;</a>--%>
+        </div>
+        <div class="span6">
+                <div class="sticky">Publishing has just become as simple as writing a sticky.</div>
         </div>
     </div>
 
@@ -146,7 +157,7 @@
 
     <div class="row">
         <div class="span5">
-            <div class=" micro-screenshot"><img class="thumbnail" src="images/small-snapshot-2.jpg"/></div>
+            <div class=" micro-screenshot"><img class="thumbnail" src="images/small-snapshot-1.jpg"/></div>
 
         </div>
 
@@ -158,13 +169,13 @@
                 organise with friends a home project like a holiday, a wedding or a birthday party.
                 The uses are limited only by your imagination.</p>
 
-            <p class="handwriting">The simplest way to collaborate in realitme.</p>
+            <p class="handwriting">The simplest way to collaborate in realtime.</p>
 
 
             <br/>
 
 
-            <%--<p><a class="btn" href="http://beta.hashbo.com">Show me &raquo;</a></p>--%>
+            <%--<p><a class="btn" href="http://boardcast.it">Show me &raquo;</a></p>--%>
         </div>
     </div>
     <hr/>
@@ -185,15 +196,15 @@
         </div>
     </div>
 
-    <%@ include file="footer.jspf" %>
 
 </div>
 
+<%@ include file="footer.jspf" %>
 
 <!-- /container -->
 <script type="text/javascript">
     $(window).load(function() {
-        document.getElementById('preloader').src = 'http://beta.hashbo.com/index_preload.html#registration'
+        document.getElementById('preloader').src = 'http://boardcast.it/index_preload.html#registration'
     });
 </script>
 

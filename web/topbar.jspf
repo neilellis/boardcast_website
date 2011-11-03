@@ -1,7 +1,7 @@
 <div class="topbar">
     <div class="fill">
         <div class="container">
-            <a class="brand" href="http://hashbo.com">Hashbo</a>
+            <a class="brand" href="http://hashbo.com"></a>
             <ul class="nav">
                 <li><a href="./">Home</a></li>
                 <li><a href="./contact.jsp">Contact</a></li>
@@ -10,7 +10,7 @@
                 </c:if>
             </ul>
             <c:if test="${empty sessionScope.username}">
-                <form action="_login" method="POST" class="pull-right"
+                <form action="/_login" method="POST" class="pull-right"
                       onsubmit="document.getElementById('loginNextUrl').value=window.location.href;  window.sessionStorage.setItem('boardcast.identity','');">
                     <input class="input-small" type="text" name="username" placeholder="Username" value="">
                     <input class="input-small" type="password" name="password" placeholder="Password">
@@ -19,7 +19,7 @@
                 </form>
             </c:if>
             <c:if test="${not empty sessionScope.username}">
-                <form action="_logout" method="POST" class="pull-right"
+                <form action="/_logout" method="POST" class="pull-right"
                       onsubmit="document.getElementById('logoutNextUrl').value= window.location.href;  window.sessionStorage.setItem('boardcast.identity','');">
                     <input type="hidden" id="logoutNextUrl" name="next"/>
                     <button class="btn" type="submit">Sign Out</button>

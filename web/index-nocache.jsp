@@ -51,19 +51,19 @@
     <div class="slider-wrapper theme-default">
         <div class="ribbon"></div>
         <div id="slider" class="nivoSlider">
-            <a href="http://beta.hashbo.com">
+            <a href="http://boardcast.it">
                 <img src="images/woman1-full-logo.jpg" alt=""
                      title="#first-caption"/>
             </a>
-            <a href="http://beta.hashbo.com">
+            <a href="http://boardcast.it">
                 <img src="images/pucker-full.jpg" alt=""
                      title="#second-caption"/>
             </a>
-            <a href="http://beta.hashbo.com">
+            <a href="http://boardcast.it">
                 <img src="images/office-full.jpg" alt=""
                      title="#third-caption "/>
             </a>
-            <a href="http://beta.hashbo.com">
+            <a href="http://boardcast.it">
                 <img src="images/screenshot.jpg" alt=""
                      title="#fourth-caption "/>
             </a>
@@ -101,7 +101,7 @@
         <%--and a whole lot more. We're redefining what the internet means - instead of a thing to read it's now a place--%>
         <%--to play, let's turn the library into a playground!</p>--%>
 
-        <%--<p><a class="btn primary large" href="http://beta.hashbo.com">Show me &raquo;</a></p>--%>
+        <%--<p><a class="btn primary large" href="http://boardcast.it">Show me &raquo;</a></p>--%>
     </div>
 
     <!-- Example row of columns -->
@@ -117,7 +117,7 @@
 
             <div class=" micro-screenshot"><img class="thumbnail" src="images/small-snapshot-1.jpg"/></div>
 
-            <%--<p><a class="btn" href="http://beta.hashbo.com">Show me &raquo;</a></p>--%>
+            <%--<p><a class="btn" href="http://boardcast.it">Show me &raquo;</a></p>--%>
         </div>
         <div class="span6 second-column">
             <h2>Communicate better</h2>
@@ -137,7 +137,7 @@
                 Find new ways to share your life with others, building stronger relationships and better
                 friendships. </p>
 
-            <a class="btn large primary showme" href="http://beta.hashbo.com">Show me &raquo;</a>
+            <a class="btn large primary showme" href="http://boardcast.it">Show me &raquo;</a>
         </div>
         <div class="span5 third-column">
             <h2>Create content instantly</h2>
@@ -149,7 +149,7 @@
 
             <div class=" micro-screenshot"><img class="thumbnail" src="images/small-snapshot-2.jpg"/></div>
 
-            <%--<p><a class="btn" href="http://beta.hashbo.com">Show me &raquo;</a></p>--%>
+            <%--<p><a class="btn" href="http://boardcast.it">Show me &raquo;</a></p>--%>
         </div>
     </div>
 
@@ -161,7 +161,7 @@
 <!-- /container -->
 <script type="text/javascript">
     $(window).load(function() {
-        document.getElementById('preloader').src = 'http://beta.hashbo.com/index_preload.html#registration'
+        document.getElementById('preloader').src = 'http://boardcast.it/index_preload.html#registration'
     });
 </script>
 
