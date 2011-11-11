@@ -5,7 +5,9 @@
             $('#slider').nivoSlider({
                 effect: 'fade',
                 pauseTime: 7 * 1000,
-                pauseOnHover: true
+                pauseOnHover: true ,
+                captionOpacity : 0.9
+
             });
         });
     </script>

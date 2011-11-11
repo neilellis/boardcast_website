@@ -1,4 +1,4 @@
-package hashbo;
+package boardcast;
 
 import javax.mail.Message;
 import javax.mail.MessagingException;
@@ -26,7 +26,7 @@ public class EmailServlet extends HttpServlet {
 
         String smtpServ = DEFAULT_SERVER;
 
-        String to = "support@hashbo.com";
+        String to = "support@boardcast.it";
 
         String subject = "Website email.";
 

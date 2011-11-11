@@ -29,9 +29,9 @@
             <div class="span4">&nbsp;
             </div>
             <div class="span10">
-                <a href="http://www.twitter.com/hashbo"><img
+                <a href="http://www.twitter.com/boardcast_it"><img
                         src="http://twitter-badges.s3.amazonaws.com/follow_us-a.png"
-                        alt="Follow hashbo on Twitter"/></a>
+                        alt="Follow Boardcast on Twitter"/></a>
                 <!--
                 Skype 'Skype Me™!' button
                 http://www.skype.com/go/skypebuttons

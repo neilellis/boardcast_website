@@ -8,7 +8,7 @@
     <servlet>
         <display-name>Email Servlet</display-name>
         <servlet-name>EmailServlet</servlet-name>
-        <servlet-class>hashbo.EmailServlet</servlet-class>
+        <servlet-class>boardcast.EmailServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>EmailServlet</servlet-name>

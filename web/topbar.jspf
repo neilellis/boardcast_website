@@ -1,7 +1,7 @@
 <div class="topbar">
     <div class="fill">
         <div class="container">
-            <a class="brand" href="http://hashbo.com"></a>
+            <a class="brand" href="http://boardcast.it"></a>
             <ul class="nav">
                 <li><a href="./">Home</a></li>
                 <li><a href="./contact.jsp">Contact</a></li>
