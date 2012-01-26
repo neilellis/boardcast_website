@@ -41,8 +41,10 @@
     <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
     <script type="text/javascript">var switchTo5x=true;</script>
-    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js">
-    </script><script type="text/javascript">stLight.options({publisher:'c053ca87-5b2e-4747-905f-b24567eab82d'});</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
+    <script type="text/javascript">stLight.options({publisher:'c2dcef1f-34f2-4795-b2c4-d55b9ff9528d', publisherGA:"UA-25104667-1", onhover:true});</script>
+
 
 </head>
 
@@ -258,7 +260,21 @@
 
 <iframe id='preloader' width="0" frameborder="0" height="0" src=""></iframe>
 <tags:beta-ribbon/>
-
+<script>
+    var options = { "publisher":"c2dcef1f-34f2-4795-b2c4-d55b9ff9528d",
+        "logo":{ "visible":false, "url":"", "img":"http://sd.sharethis.com/disc/images/demo_logo.png", "height":45},
+        "ad":{ "visible":false, "openDelay":"10", "closeDelay":"0"},
+        "livestream":{ "domain":"boardcast.it", "type":"sharethis", "src":""},
+        "ticker":{ "visible":false, "domain":"", "title":"Most Shared", "type":"sharethis", "src":""},
+        "facebook":{ "visible":true, "profile":"boardcast"}, "fblike":{ "visible":true, "url":""},
+        "twitter":{ "visible":true, "user":"boardcast_it"}, "twfollow":{ "visible":true, "url":"http://twitter.com/boardcast_it"},
+        "custom":[
+            { "visible":false, "title":"Popular", "url":"http://boardcast.it/_query-popular", "img":"", "popup":false, "popupCustom":{ "width":300, "height":250}},
+            { "visible":false, "title":"Custom 2", "url":"", "img":"", "popup":false, "popupCustom":{ "width":300, "height":250}},
+            { "visible":false, "title":"Custom 3", "url":"", "img":"", "popup":false, "popupCustom":{ "width":300, "height":250}}
+        ]};
+    var st_bar_widget = new sharethis.widgets.sharebar(options);
+</script>
 
 </body>
 </html>
