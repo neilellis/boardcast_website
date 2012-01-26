@@ -1,5 +1,19 @@
 <footer>
-    <%--<div class="container">--%>
-        <%--<p  class="copyright">&copy; Cazcade Limited 2010-2011</p>--%>
-    <%--</div>--%>
+    <div class="container">
+
+        <span class="footer-share">
+            <span class='st_facebook_hcount' displayText='Facebook'></span>
+            <span class='st_twitter_hcount' displayText='Tweet'></span>
+            <span class='st_reddit_hcount' displayText='Reddit'></span>
+            <span class='st_slashdot_hcount' displayText='Slashdot'></span>
+            <span class='st_email_hcount' displayText='Email'></span>
+            <span class='st_fblike_hcount'></span>
+            <span class='st_plusone_hcount'></span>
+        </span>
+        <%--<a href="http://mixpanel.com/f/partner"><img src="http://mixpanel.com/site_media/images/partner/badge_blue.png"--%>
+                                                     <%--alt="Real Time Web Analytics"/></a>--%>
+        <p class="copyright">
+            <small>&copy; Cazcade Limited 2010-2012</small>
+        </p>
+    </div>
 </footer>

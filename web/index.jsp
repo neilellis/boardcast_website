@@ -17,8 +17,10 @@
 <head>
     <meta charset="utf-8">
     <title>Boardcast- Create and Publish Instantly</title>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="">
     <meta name="author" content="Neil Ellis">
+    <meta name="theme-music" content="The Chain - Ingrid Michaelson">
     <script type="text/javascript">
         var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
         document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -38,15 +40,44 @@
     <tags:favicons/>
     <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js">
+    </script><script type="text/javascript">stLight.options({publisher:'c053ca87-5b2e-4747-905f-b24567eab82d'});</script>
 
 </head>
 
 <body>
+<!--[if IE]>
+<script type="text/javascript"
+        src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
 
-<tags:beta-ribbon/>
+<style>
+    .chromeFrameInstallDefaultStyle {
+        width: 800px; /* default is 800px */
+        top:400px;
+        border: 5px solid blue;
+        z-index:10000;
+    }
+</style>
+
+<div id="prompt">
+</div>
+
+<script>
+    // The conditional ensures that this code will only execute in IE,
+    // Therefore we can use the IE-specific attachEvent without worry
+    window.attachEvent("onload", function() {
+        CFInstall.check({
+            mode: "inline", // the default
+            node: "prompt"
+        });
+    });
+</script>
+<![endif]-->
+
 <%@ include file="topbar.jspf" %>
 
-<div class="container">
+<div class="container main">
 
 
     <div class="tagline">Create and publish instantly</div>
@@ -96,7 +127,7 @@
                      title="#third-caption "/>
             </a>
             <a href="http://boardcast.it">
-                <img src="images/slider-4.png" alt=""
+                <img src="images/slider-4.jpg" alt=""
                      title="#fourth-caption "/>
             </a>
             <a href="http://boardcast.it">
@@ -217,14 +248,16 @@
 
 <%@ include file="footer.jspf" %>
 
+
 <!-- /container -->
-<script type="text/javascript">
-    $(window).load(function() {
-        document.getElementById('preloader').src = 'http://boardcast.it/welcome'
-    });
-</script>
+<%--<script type="text/javascript">--%>
+    <%--$(window).load(function() {--%>
+        <%--document.getElementById('preloader').src = 'http://boardcast.it/welcome'--%>
+    <%--});--%>
+<%--</script>--%>
 
 <iframe id='preloader' width="0" frameborder="0" height="0" src=""></iframe>
+<tags:beta-ribbon/>
 
 
 </body>

@@ -11,7 +11,7 @@
             </ul>
             <c:if test="${empty sessionScope.username}">
                 <form action="/_login" method="POST" class="pull-right"
-                      onsubmit="document.getElementById('loginNextUrl').value=window.location.href;  window.sessionStorage.setItem('boardcast.identity','');">
+                      onsubmit="document.getElementById('loginNextUrl').value='/_welcome';  window.sessionStorage.setItem('boardcast.identity','');">
                     <input class="input-small" type="text" name="username" placeholder="Username" value="">
                     <input class="input-small" type="password" name="password" placeholder="Password">
                     <input type="hidden" id="loginNextUrl" name="next"/>

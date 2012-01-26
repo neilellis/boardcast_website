@@ -9,6 +9,8 @@
     <title>Boardcast - Contact Us</title>
     <meta name="description" content="">
     <meta name="author" content="Neil Ellis">
+    <meta name="theme-music" content="Attack of the Ghost Riders - The Asteroids Galaxy Tour">
+    <meta name="question" content="Have you nothing better to do than read our HTML source?">
     <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <tags:less/>
     <tags:nivo-slider/>
@@ -20,7 +22,7 @@
 <tags:beta-ribbon/>
 <%@ include file="topbar.jspf" %>
 
-<div class="container">
+<div class="container main">
     <section id="online-comm">
         <div class="page-header">
             <h1>Online</h1>
@@ -50,16 +52,16 @@
 
 
     <section id="contact-form">
+
+        <div class="page-header">
+            <h1>Email</h1>
+        </div>
         <c:if test="${not empty requestScope.error}">
             <div class="alert-message error">${requestScope.error}</div>
         </c:if>
         <c:if test="${not empty requestScope.info}">
             <div class="alert-message success">${requestScope.info}</div>
         </c:if>
-
-        <div class="page-header">
-            <h1>Email</h1>
-        </div>
         <div class="row">
             <div class="span4">
                 &nbsp;
@@ -121,10 +123,10 @@
     </section>
     <section id="by-phone">
     </section>
-    <%@ include file="footer.jspf" %>
 
 </div>
 
+<%@ include file="footer.jspf" %>
 
 </body>
 </html>

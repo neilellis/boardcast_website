@@ -10,6 +10,7 @@
     <script src="js/less.js"></script>
     <style type="text/css">
         body {
-            padding-top: 60px;
+            padding-top: 40px;
+            position:relative;
         }
     </style>
