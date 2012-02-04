@@ -16,31 +16,30 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Boardcast- Create and Publish Instantly</title>
+    <title>Boardcast - The Internet's Whiteboard</title>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="">
+    <meta name="description" content="Instant realtime publishing with Boardcast">
     <meta name="author" content="Neil Ellis">
     <meta name="theme-music" content="The Chain - Ingrid Michaelson">
+    <meta property="og:title" content="Boardcast - Instant Publishing"/>
+    <meta property="og:type" content="Website"/>
+    <meta property="og:url" content="http://boardcast.it"/>
+    <meta property="og:image" content="http://boardcast.it/site/images/boardcast-logo.png"/>
+    <meta property="og:description" content="Instant realtime publishing with Boardcast"/>
+    <meta property="og:site_name" content="Boardcast"/>
     <script type="text/javascript">
         var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
         document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
     </script>
 
-    <script type="text/javascript">
-        var pageTracker = _gat._getTracker("UA-22354589-1");
+    <%@ include file="analytics.jspf"%>
 
-        // *** track anchor tags ***
-        pageTracker._setAllowAnchor(true);
-
-        pageTracker._initData();
-        pageTracker._trackPageview();
-    </script>
     <tags:nivo-slider/>
     <tags:less/>
     <tags:favicons/>
     <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
-    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript">var switchTo5x = true;</script>
     <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
     <script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
     <script type="text/javascript">stLight.options({publisher:'c2dcef1f-34f2-4795-b2c4-d55b9ff9528d', publisherGA:"UA-25104667-1", onhover:true});</script>
@@ -56,9 +55,9 @@
 <style>
     .chromeFrameInstallDefaultStyle {
         width: 800px; /* default is 800px */
-        top:400px;
+        top: 400px;
         border: 5px solid blue;
-        z-index:10000;
+        z-index: 10000;
     }
 </style>
 
@@ -68,10 +67,10 @@
 <script>
     // The conditional ensures that this code will only execute in IE,
     // Therefore we can use the IE-specific attachEvent without worry
-    window.attachEvent("onload", function() {
+    window.attachEvent("onload", function () {
         CFInstall.check({
-            mode: "inline", // the default
-            node: "prompt"
+            mode:"inline", // the default
+            node:"prompt"
         });
     });
 </script>
@@ -82,7 +81,7 @@
 <div class="container main">
 
 
-    <div class="tagline">Create and publish instantly</div>
+    <div class="tagline">The Internet's Whiteboard</div>
 
     <!-- Main hero unit for a primary marketing message or call to action -->
     <%--<div class="hero-unit">--%>
@@ -95,7 +94,7 @@
 
             <p>
                 Ever wanted to instantly share your ideas, photos, videos, website and other information,
-                all at the same time? Now you can, with Boardcast, a revolutionary step in internet publishing.</p>
+                all at the same time? Now you can, with Boardcast a simpler and easier new way to share and communicate.</p>
 
             <p class="handwriting">Show the world in an instant!</p>
             <%--<p><a class="btn" href="http://boardcast.it">Show me &raquo;</a></p>--%>
@@ -166,6 +165,7 @@
 
         <div class="span10">
             <br/>
+
             <h2>Quick, effective and simple to use</h2>
 
             <p><strong>Step One</strong> - Choose a background, you can use one of ours or upload your own. </p>
@@ -197,7 +197,7 @@
                 you make is live instantly, so no problem keeping people informed with up to the minute changes.
             </p>
 
-            <p class="handwriting">Now your content can join the conversation.</p>
+            <p class="handwriting">Add content to the conversation</p>
 
             <%--<a class="btn large primary showme" href="http://boardcast.it">Show me &raquo;</a>--%>
         </div>
@@ -215,7 +215,7 @@
                 like a holiday, wedding or party or share ideas and keep collegues in the loop at work. As every change
                 is live instantly, you’ll always be up to date with the latest information.</p>
 
-            <p class="handwriting">The simplest way to collaborate.</p>
+            <p class="handwriting">The simplest way to collaborate</p>
 
 
             <br/>
@@ -232,15 +232,16 @@
 
     <div class="row">
         <div class="span15">
-            <h2>Boardcast – the future of publishing</h2>
+            <h2>Share and communicate easily</h2>
 
-            <p>Boardcast is the next step in the evolution of publishing, it really is the fastest and simplest means of publishing yet!</p>
+            <p>Boardcast is a valuable new tool for internet communication, that is quick, simple and immediate, like writing
+                on paper.</p>
 
             <p>And because it takes so little time to produce content with Boardcast you can create a board for even
                 the most trivial purpose, a thank you note, a single joke, a poem - a love letter. Or you can use
                 a board to tell the world about yourself, a project or a hobby of yours.</p>
 
-            <p class="handwriting">Boardcast is for work, for play - for life!</p>
+            <p class="handwriting">Communication made easy</p>
 
         </div>
     </div>
@@ -253,9 +254,9 @@
 
 <!-- /container -->
 <%--<script type="text/javascript">--%>
-    <%--$(window).load(function() {--%>
-        <%--document.getElementById('preloader').src = 'http://boardcast.it/welcome'--%>
-    <%--});--%>
+<%--$(window).load(function() {--%>
+<%--document.getElementById('preloader').src = 'http://boardcast.it/welcome'--%>
+<%--});--%>
 <%--</script>--%>
 
 <iframe id='preloader' width="0" frameborder="0" height="0" src=""></iframe>
@@ -266,7 +267,7 @@
         "ad":{ "visible":false, "openDelay":"10", "closeDelay":"0"},
         "livestream":{ "domain":"boardcast.it", "type":"sharethis", "src":""},
         "ticker":{ "visible":false, "domain":"", "title":"Most Shared", "type":"sharethis", "src":""},
-        "facebook":{ "visible":true, "profile":"boardcast"}, "fblike":{ "visible":true, "url":""},
+        "facebook":{ "visible":true, "profile":"boardcast"}, "fblike":{ "visible":true, "url":"http://boardcast.it"},
         "twitter":{ "visible":true, "user":"boardcast_it"}, "twfollow":{ "visible":true, "url":"http://twitter.com/boardcast_it"},
         "custom":[
             { "visible":false, "title":"Popular", "url":"http://boardcast.it/_query-popular", "img":"", "popup":false, "popupCustom":{ "width":300, "height":250}},
